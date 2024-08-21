@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.css": "/sih/static/css/main.31d6cfe0.css",
+    "main.js": "/sih/static/js/main.bb587dc9.js",
+    "index.html": "/sih/index.html",
+    "main.bb587dc9.js.map": "/sih/static/js/main.bb587dc9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.bb587dc9.js"
+  ]
+}
