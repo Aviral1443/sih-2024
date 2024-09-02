@@ -211,3 +211,4 @@ function RegisterHospital() {
 }
 
 export default RegisterHospital;
+vs
