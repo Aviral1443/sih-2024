@@ -6,20 +6,22 @@ import LoginHospital from './pages/LoginHospital'
 import UserProfile from './pages/UserProfile'
 import RegisterHospital from './pages/RegisterHospital'
 import Prescription from './pages/Prescription'
-import Pdf from './pages/Pdf'
+import UserReports from './pages/UserReports'
+import Scheduler from './pages/Scheduler'
 
 function App() {
 	return (
 		<Router>
 			<Routes>
-				<Route path='/' element={<LoginUser />} />
+				<Route path='/' element={<Home />} />
 				<Route path='/userLogin' element={<LoginUser />} />
 				<Route path='/user' element={<UserHome />} />
 				<Route path='/userprofile' element={<UserProfile />} />
+				<Route path='/userreports' element={<UserReports />} />
 				<Route path='/hospitalLogin' element={<LoginHospital />} />
 				<Route path='/hospitalRegister' element={<RegisterHospital />} />
 				<Route path='/pres' element={<Prescription />} />
-				<Route path='/pdf' element={<Pdf />} />
+				<Route path='/scheduler' element={<Scheduler />} />
 				<Route path='*' element={<Home />} />
 			</Routes>
 		</Router>

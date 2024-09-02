@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <div>
         <nav
-        className="navbar navbar-expand-lg"
+        className="navbar navbar-expand-lg overflow-hidden"
         style={{ backgroundColor: "#0056b3", height: "60px" }}
       >
         <div className="container-fluid">
@@ -41,7 +41,7 @@ const Navbar = () => {
                 </a>
               </li>
               <li className="nav-item mx-4">
-                <a className="nav-link mx-2" href="#">
+                <a className="nav-link mx-2" href="/userreports">
                   Reports
                 </a>
               </li>
@@ -51,7 +51,7 @@ const Navbar = () => {
                 </a>
               </li>
               <li className="nav-item mx-4">
-                <a className="nav-link mx-2" href="#">
+                <a className="nav-link mx-2" href="/scheduler">
                   Scheduler
                 </a>
               </li>

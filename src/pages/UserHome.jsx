@@ -23,7 +23,7 @@ function UserHome() {
 					<div className='col'>
 						<div className='card h-100 custom-rounded-card'>
 							<img src='./images/Records.svg' className='card-img-top' alt='Card Image 1' />
-							<div className='card-body'>
+							<div className='card-body overflow-hidden'>
 								<p className='card-text' style={{ fontFamily: 'Nunito, sans-serif', fontWeight: '700', fontSize: '21px' }}>
 									Securely store and
 									<br />
@@ -31,7 +31,7 @@ function UserHome() {
 								</p>
 							</div>
 							<hr style={{ color: '#083b6e', height: '10%', width: '100%' }} />
-							<div className='c-footer' style={{ fontFamily: 'Nunito, sans-serif', fontWeight: '700', fontSize: '35px' }}>
+							<div className='c-footer overflow-hidden' style={{ fontFamily: 'Nunito, sans-serif', fontWeight: '700', fontSize: '35px' }}>
 								<a href='#' style={{ textDecoration: 'none' }}>
 									<p style={{ color: 'darkblue' }}>
 										Reports <img style={{ width: '45px', height: '45px', margin: '0px' }} src='./images/double_arrow.svg' alt='arrow' />
