@@ -1,0 +1,50 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    scrollbar-width: thin;
+    overflow-x: hidden;
+}
+
+.addMed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #f8f9fa;
+}
+
+.addedmed {
+    margin-top: 20px;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.table th,
+.table td {
+    vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .addMed,
+    .addedmed {
+        flex-direction: column;
+    }
+
+    .addMed img,
+    .addedmed img {
+        height: 30px;
+    }
+}
+    .table-responsive {
+        font-size: 0.9rem;
+    }
