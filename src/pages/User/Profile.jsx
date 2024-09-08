@@ -68,7 +68,7 @@ function UserProfile({ userId }) {
 			<div className='bg-light'>
 				<div className='container px-4 py-5'>
 					<form onSubmit={edit}>
-						<div class='d-flex flex-row-reverse'>
+						<div className='d-flex flex-row-reverse'>
 							{editMode ? (
 								<>
 									<button
@@ -90,7 +90,7 @@ function UserProfile({ userId }) {
 										setEditMode(true)
 									}}
 								>
-									<i class='bi bi-pencil-square'></i> Edit
+									<i className='bi bi-pencil-square'></i> Edit
 								</button>
 							)}
 						</div>

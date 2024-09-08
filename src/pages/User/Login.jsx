@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { auth, signInWithEmailAndPassword, createUserWithEmailAndPassword, setDoc, doc, firestore, onAuthStateChanged, signOut } from '../../fb'
+import { auth, signInWithEmailAndPassword, createUserWithEmailAndPassword, setDoc, doc, firestore } from '../../fb'
 
 function LoginUser(userId = { id }) {
 	const [reg, setReg] = useState(false)
@@ -37,20 +37,43 @@ function LoginUser(userId = { id }) {
 			{reg && (
 				<div>
 					<div className='container mt-4 content'>
-						<div className='row align-items-center'>
-							<div className='col-lg-6 text-center text-lg-start mb-4 mb-lg-0' style={{ marginLeft: '5px' }}>
-								<div className='hero-text'>
-									<h1>Hello!..</h1>
-									<p style={{ color: 'black', fontWeight: 'bold' }}>Medical Management Made Simple...</p>
+						<div className='row align-items-center '>
+							<div className='col-lg-6 text-center text-lg-start mb-4 mb-lg-0 ms-10'>
+								<div className='hero-text '>
+									<h1
+										style={{
+											color: 'black',
+											fontWeight: 'bold',
+											fontSize: '5rem',
+											fontFamily: "'Nunito', sans-serif"
+										}}
+									>
+										Hello!..
+									</h1>
+									<p
+										style={{
+											color: 'black',
+											fontWeight: 'bold',
+											fontSize: '2rem',
+											fontFamily: "'Nunito', sans-serif"
+										}}
+									>
+										Medical Management Made Simple...
+									</p>
 								</div>
-								<img style={{ maxWidth: '60%', height: 'auto' }} className='hero-img' src='/images/medical2.svg' alt='Medical Illustration' />
+								<img style={{ maxWidth: '60%', height: 'auto' }} className='hero-img ms-10' src='/images/medical2.svg' alt='Medical Illustration' />
 							</div>
 							<div className='col-lg-4 offset-lg-1'>
 								<div className='card-custom mx-auto' style={{ width: '100%', maxWidth: '300px' }}>
-									<div className=' text-center'>
+									<div className=' text-center  p-4'>
 										<form onSubmit={register}>
 											<div className='mb-4'>
-												<img src='/images/login.png' alt='Profile Picture' className='rounded-circle profile-img' />
+												<img
+													style={{ height: '200px', width: '200px;' }}
+													src='/images/login.png'
+													alt='Profile Picture'
+													className='rounded-circle profile-img'
+												/>
 											</div>
 											<div className='mb-3'>
 												<input type='text' className='form-control' name='name' placeholder='Name' />
@@ -61,7 +84,17 @@ function LoginUser(userId = { id }) {
 											<div className='mb-3'>
 												<input type='password' className='form-control' name='pwd' placeholder='Password' />
 											</div>
-											<button type='submit' className='btn btn-custom w-100' style={{ backgroundColor: 'darkblue' }}>
+											<button
+												type='submit'
+												className='btn btn-custom w-100'
+												style={{
+													fontSize: '1.4rem',
+													fontWeight: 800,
+													backgroundColor: 'rgb(18, 18, 95)',
+													color: '#aaacf7',
+													fontFamily: "'Nunito', sans-serif"
+												}}
+											>
 												Register
 											</button>
 										</form>
@@ -81,8 +114,11 @@ function LoginUser(userId = { id }) {
 											borderRadius: '20px',
 											marginTop: '10px',
 											padding: '10px',
-											color: 'blue',
-											width: '30%'
+											color: '#aaacf7',
+											width: '30%',
+											backgroundColor: 'rgb(18, 18, 95)',
+											fontWeight: 'bold',
+											fontFamily: "'Nunito', sans-serif"
 										}}
 										onClick={() => setReg(false)}
 									>
@@ -94,15 +130,32 @@ function LoginUser(userId = { id }) {
 					</div>
 				</div>
 			)}
-
 			{!reg && (
 				<div>
 					<div className='container mt-4 content'>
 						<div className='row align-items-center'>
 							<div className='col-lg-6 text-center text-lg-start mb-4 mb-lg-0' style={{ marginLeft: '5px' }}>
 								<div className='hero-text'>
-									<h1>Hello!..</h1>
-									<p style={{ color: 'black', fontWeight: 'bold' }}>Medical Management Made Simple...</p>
+									<h1
+										style={{
+											color: 'black',
+											fontWeight: 'bold',
+											fontSize: '5rem',
+											fontFamily: "'Nunito', sans-serif"
+										}}
+									>
+										Hello!..
+									</h1>
+									<p
+										style={{
+											color: 'black',
+											fontWeight: 'bold',
+											fontSize: '2rem',
+											fontFamily: "'Nunito', sans-serif"
+										}}
+									>
+										Medical Management Made Simple...
+									</p>
 								</div>
 								<img
 									style={{ maxWidth: '60%', height: 'auto' }}
@@ -116,7 +169,12 @@ function LoginUser(userId = { id }) {
 									<div className=' text-center'>
 										<form onSubmit={login}>
 											<div className='mb-4'>
-												<img src='/images/login.png' alt='Profile Picture' className='rounded-circle profile-img' />
+												<img
+													style={{ height: '200px', width: '200px;' }}
+													src='/images/login.png'
+													alt='Profile Picture'
+													className='rounded-circle profile-img'
+												/>
 											</div>
 											<div className='mb-3'>
 												<input type='text' className='form-control' name='email' placeholder='Email' />
@@ -124,7 +182,17 @@ function LoginUser(userId = { id }) {
 											<div className='mb-3'>
 												<input type='password' className='form-control' name='pwd' placeholder='Password' />
 											</div>
-											<button type='submit' className='btn btn-custom w-100' style={{ backgroundColor: 'darkblue' }}>
+											<button
+												type='submit'
+												className='btn btn-custom w-100'
+												style={{
+													fontSize: '1.4rem',
+													fontWeight: 800,
+													backgroundColor: 'rgb(18, 18, 95)',
+													color: '#aaacf7',
+													fontFamily: "'Nunito', sans-serif"
+												}}
+											>
 												Login
 											</button>
 										</form>
@@ -145,8 +213,11 @@ function LoginUser(userId = { id }) {
 											borderRadius: '20px',
 											marginTop: '10px',
 											padding: '10px',
-											color: 'blue',
-											width: '30%'
+											color: '#aaacf7',
+											width: '30%',
+											backgroundColor: 'rgb(18, 18, 95)',
+											fontWeight: 'bold',
+											fontFamily: "'Nunito', sans-serif"
 										}}
 										onClick={() => setReg(true)}
 									>
@@ -158,14 +229,6 @@ function LoginUser(userId = { id }) {
 					</div>
 				</div>
 			)}
-
-			{/* <button
-				// onClick={() => {
-					signOut(auth)
-				}}
-			>
-				Log out
-			</button> */}
 		</>
 	)
 }

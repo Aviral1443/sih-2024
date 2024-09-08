@@ -46,7 +46,7 @@ function Home() {
 								<p style={{ fontSize: '1rem', color: '#b0bec5', lineHeight: '1.5', marginBottom: '1.5rem' }}>
 									Securely store and access all your medical documents in one place.
 								</p>
-								<button
+								<p href="/hospital/reports"><button
 									className='btn btn-primary'
 									style={{
 										borderRadius: '20px',
@@ -59,7 +59,8 @@ function Home() {
 									}}
 								>
 									View
-								</button>
+								</button></p>
+								
 							</div>
 						</div>
 					</div>
@@ -78,7 +79,7 @@ function Home() {
 								<p style={{ fontSize: '1rem', color: '#b0bec5', lineHeight: '1.5', marginBottom: '1.5rem' }}>
 									Keep track of all your medications in one place.
 								</p>
-								<button
+								<a href="/hospital/medicine"><button
 									className='btn btn-primary'
 									style={{
 										borderRadius: '20px',
@@ -91,7 +92,8 @@ function Home() {
 									}}
 								>
 									View
-								</button>
+								</button></a>
+								
 							</div>
 						</div>
 					</div>
@@ -105,12 +107,12 @@ function Home() {
 							</div>
 							<div className='blog-content'>
 								<h3 className='mt-3' style={{ fontSize: '1.5rem', marginBottom: '1rem', color: '#b0bec5' }}>
-									Scheduler
+									Appointment
 								</h3>
 								<p style={{ fontSize: '1rem', color: '#b0bec5', lineHeight: '1.5', marginBottom: '1.5rem' }}>
-									Stay on schedules with timely reminders for your medications.
+									Easily book appointments with the industry levels doctors.
 								</p>
-								<button
+								<a href="/user/appointment"><button
 									className='btn btn-primary'
 									style={{
 										borderRadius: '20px',
@@ -123,7 +125,8 @@ function Home() {
 									}}
 								>
 									View
-								</button>
+								</button></a>
+								
 							</div>
 						</div>
 					</div>

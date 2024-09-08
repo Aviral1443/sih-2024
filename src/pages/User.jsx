@@ -8,7 +8,6 @@ import Profile from './User/Profile'
 import Reports from './User/Reports'
 import Medicine from './User/Medicine'
 import Appointment from './User/Appointment'
-
 function User() {
 	const [id, setId] = useState()
 

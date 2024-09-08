@@ -27,16 +27,6 @@ const Navbar = ({ hospitalId }) => {
 									<a
 										className='nav-link'
 										style={{ color: '#95a8f3', fontSize: '1.6rem', fontFamily: "'Nunito', sans-serif", fontWeight: 800 }}
-										aria-current='page'
-										href='/hospital'
-									>
-										Home
-									</a>
-								</li>
-								<li className='nav-item mx-4'>
-									<a
-										className='nav-link'
-										style={{ color: '#95a8f3', fontSize: '1.6rem', fontFamily: "'Nunito', sans-serif", fontWeight: 800 }}
 										href='/hospital/prescription'
 									>
 										Prescription
@@ -52,15 +42,15 @@ const Navbar = ({ hospitalId }) => {
 										Patients
 									</a>
 								</li>
-								{/* <li className='nav-item mx-4'>
+								<li className='nav-item mx-4'>
 									<a
 										className='nav-link'
 										style={{ color: '#95a8f3', fontSize: '1.6rem', fontFamily: "'Nunito', sans-serif", fontWeight: 800 }}
 										href='#'
 									>
-										Help
+										Scheduler
 									</a>
-								</li> */}
+								</li>
 							</ul>
 						</div>
 						{hospitalId ? (

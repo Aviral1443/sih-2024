@@ -21,7 +21,7 @@ function Home() {
 					className='navbar navbar-expand-md'
 				>
 					<div style={{ fontSize: '1.8rem', fontWeight: '700', color: '#95a8f3', transition: 'color 0.3s ease' }} className='navbar-brand'>
-						Logo
+					<img src='images/LOGO_heartPartOnly.svg' alt='Medical Services' className='d-inline-block align-text-top' style={{ width: '40px', height: '40px' }} />
 					</div>
 
 					<button
@@ -203,7 +203,7 @@ function Home() {
 						<h2 className='text-center mb-4' style={{ color: '#95a8f3', fontSize: '2.5rem', fontWeight: '700' }}>
 							Insights
 						</h2>
-						<div className='row text-center'>
+						{/* <div className='row text-center'>
 							<div className='col-lg-4 col-md-6 mb-4'>
 								<div
 									className='insight-card p-4'
@@ -288,7 +288,108 @@ function Home() {
 									</button>
 								</div>
 							</div>
+						</div> */}
+						<div className='row row-cols-1 row-cols-md-3 g-5'>
+					<div className='col'>
+						<div
+							className='blog-card p-3'
+							style={{ backgroundColor: 'rgba(2, 7, 17, 0.9)', borderRadius: '12px', textAlign: 'left', boxShadow: '0 4px 20px rgba(0, 0, 0, 0.2)' }}
+						>
+							<div className='mt-3' style={{ backgroundColor: '#7589fc', width: '100%', borderRadius: '12px' }}>
+								<img style={{ margin: '10px', width: '90%', height: '90%' }} src='/images/health-check.png' alt='Blog 1' />
+							</div>
+							<div className='blog-content'>
+								<h3 className='mt-3' style={{ fontSize: '1.5rem', marginBottom: '0.2rem', color: '#b0bec5' }}>
+									Reports
+								</h3>
+								<p style={{ fontSize: '1rem', color: '#b0bec5', lineHeight: '1.5', marginBottom: '1.5rem' }}>
+									Securely store and access all your medical documents in one place.
+								</p>
+								<p href="/hospital/reports"><button
+									className='btn btn-primary'
+									style={{
+										borderRadius: '20px',
+										fontSize: '20px',
+										width: '100px',
+										fontFamily: "'Nunito', sans-serif",
+										fontWeight: 700,
+										backgroundColor: '#95a8f3',
+										color: '#03071f'
+									}}
+								>
+									View
+								</button></p>
+								
+							</div>
 						</div>
+					</div>
+					<div className='col'>
+						<div
+							className='blog-card p-3'
+							style={{ backgroundColor: 'rgba(2, 7, 17, 0.9)', borderRadius: '12px', textAlign: 'left', boxShadow: '0 4px 20px rgba(0, 0, 0, 0.2)' }}
+						>
+							<div className='mt-3' style={{ backgroundColor: '#7589fc', width: '100%', borderRadius: '12px' }}>
+								<img style={{ margin: '10px', width: '90%', height: '90%' }} src='/images/syringe.png' alt='Blog 2' />
+							</div>
+							<div className='blog-content'>
+								<h3 className='mt-3' style={{ fontSize: '1.5rem', marginBottom: '1rem', color: '#b0bec5' }}>
+									Medicines
+								</h3>
+								<p style={{ fontSize: '1rem', color: '#b0bec5', lineHeight: '1.5', marginBottom: '1.5rem' }}>
+									Keep track of all your medications in one place.
+								</p>
+								<a href="/hospital/medicine"><button
+									className='btn btn-primary'
+									style={{
+										borderRadius: '20px',
+										fontSize: '20px',
+										width: '100px',
+										fontFamily: "'Nunito', sans-serif",
+										fontWeight: 700,
+										backgroundColor: '#95a8f3',
+										color: '#03071f'
+									}}
+								>
+									View
+								</button></a>
+								
+							</div>
+						</div>
+					</div>
+					<div className='col'>
+						<div
+							className='blog-card p-3'
+							style={{ backgroundColor: 'rgba(2, 7, 17, 0.9)', borderRadius: '12px', textAlign: 'left', boxShadow: '0 4px 20px rgba(0, 0, 0, 0.2)' }}
+						>
+							<div className='mt-3' style={{ backgroundColor: '#7589fc', width: '100%', borderRadius: '12px' }}>
+								<img style={{ margin: '10px', width: '90%', height: '90%' }} src='/images/schedule.png' alt='Blog 3' />
+							</div>
+							<div className='blog-content'>
+								<h3 className='mt-3' style={{ fontSize: '1.5rem', marginBottom: '1rem', color: '#b0bec5' }}>
+									Appointment
+								</h3>
+								<p style={{ fontSize: '1rem', color: '#b0bec5', lineHeight: '1.5', marginBottom: '1.5rem' }}>
+									Easily book appointments with the industry levels doctors.
+								</p>
+								<a href="/user/appointment"><button
+									className='btn btn-primary'
+									style={{
+										borderRadius: '20px',
+										fontSize: '20px',
+										width: '100px',
+										fontFamily: "'Nunito', sans-serif",
+										fontWeight: 700,
+										backgroundColor: '#95a8f3',
+										color: '#03071f'
+									}}
+								>
+									View
+								</button></a>
+								
+							</div>
+						</div>
+					</div>
+				</div>
 					</div>
 				</section>
 				<section id='register' className='py-5' style={{ backgroundColor: '#081722', borderRadius: '12px' }}>
